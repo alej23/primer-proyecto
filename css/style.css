@@ -1,0 +1,120 @@
+main {
+    background-color: #a4a4a4;
+    background-image: url(../assets/img/fondo-inicio-main.png);
+    background-size: 95%;
+}
+
+.background-land {
+    background-image: url(../assets/img/background-inicio.png);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    /* hay que agregar important para que funcione */
+}
+
+main a {
+    color: wheat;
+}
+
+.container-inicio-registrate {
+    /* border: 2px solid black; */
+    background-color: rgba(75, 21, 0, 0.7);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.contenedor-noticias {
+    background-color: rgba(75, 21, 0, 0.7);
+    border-radius: 10px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.contenedor-nube {
+    position: relative;
+    top: 100%;
+    z-index: 7;
+}
+
+.nube1 {
+    width: 10%;
+    z-index: 6;
+    position: absolute;
+    animation: mover-nube 180s linear infinite;
+}
+
+.nube2 {
+    width: 20%;
+    z-index: 6;
+    position: absolute;
+    animation: mover-nube2 100s linear infinite;
+}
+
+@keyframes mover-nube {
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: 85%;
+    }
+}
+
+@keyframes mover-nube2 {
+    0% {
+        left: 50%;
+    }
+    100% {
+        left: 70%;
+    }
+}
+
+.bienvenido {
+    width: 60%;
+    transform: translateY(-310%);
+    margin-left: 3%;
+    opacity: 0;
+    animation: aparecer-bienvenido 2s ease-in-out forwards;
+}
+
+@keyframes aparecer-bienvenido {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.orange-gaming {
+    width: 50%;
+    transform: translateY(-370%);
+    opacity: 0;
+    animation: aparecer-orange 4s ease-in-out forwards;
+}
+
+@keyframes aparecer-orange {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.lamejor {
+    width: 60%;
+    transform: translateY(-200%);
+}
+
+
+/* color logo #FF8310; */
+
+.imagen-carrusel {
+    width: 100%;
+}
+
+.texto-noticias {
+    font-size: small;
+}

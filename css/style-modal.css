@@ -1,0 +1,173 @@
+* {
+  font-weight: 300;
+}
+
+.modal {
+  margin-top: 85px;
+}
+
+.modal-content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0.99;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-width: 3px;
+  border-color: rgb(255, 81, 0);
+}
+
+.modal-content h2 {
+  color: #fff;
+}
+
+.modal-body .user-box {
+  position: relative;
+}
+
+.modal-body .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.modal-body .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal-body .user-box input:focus ~ label,
+.modal-body .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgb(255, 81, 0);
+  font-size: 12px;
+}
+
+.modal-body form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(255, 81, 0);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.modal-body a:hover {
+  background: rgb(255, 81, 0);
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ff6a00, 0 0 25px #ff6a00, 0 0 50px #ff6a00,
+    0 0 100px #ff6a00;
+}
+
+.modal-body a span {
+  position: absolute;
+  display: block;
+}
+
+.modal-body a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgb(255, 81, 0));
+  animation: btn-ani1 1s linear infinite;
+}
+
+@keyframes btn-ani1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.modal-body a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(255, 81, 0));
+  animation: btn-ani2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-ani2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.modal-body a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(255, 81, 0));
+  animation: btn-ani3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-ani3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.modal-body a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgb(255, 81, 0));
+  animation: btn-ani4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-ani4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.Recuperar-Contraseña a{
+  color: rgb(255, 81, 0);
+}
+
+.Registro-Contraseña a{
+  color: rgb(255, 81, 0);
+}
+

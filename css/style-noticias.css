@@ -1,0 +1,112 @@
+nav {
+    background-color: black;
+}
+
+body {
+    background-image: url(../assets/img/noticias/bg-noticias.png);
+}
+
+/* Oferta del dia */
+.Tienda-Carrucel {
+    position: relative;
+    width: 100%;
+    background-color: rgba(75, 21, 0, 0.7);
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+}
+
+.item {
+    width: 12rem;
+    height: 15rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* oferta del dia */
+
+
+.card {
+    background-color: rgba(51, 19, 0, 0.7) !important;
+    color: white;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 5px #8b3a00, 0 0 25px #8b3a00, 0 0 50px #8b3a00, 0 0 100px #8b3a00 !important;
+}
+
+
+/* marcador deportivo */
+
+/* body {
+    display: flex;
+    justify-content: center;
+    background-color: black!important;
+    padding: 2rem;
+  } */
+  
+  .partido {
+    background-color: rgba(255, 255, 255, 0.479);
+    width: auto;
+  }
+  
+  .torneo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .torneo svg {
+    height: 2rem;
+    padding: .3em;
+  }
+  
+  h1 {
+    font-size: x-small !important;
+  }
+  
+  .equipo1, .equipo2 {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+  }
+  
+  .equipo1 section img, .equipo2  section img {
+    height: 2rem;
+    width: 2rem;
+  }
+  
+  .equipo1 section, .equipo2 section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small !important;
+  }
+
+  
+  @media all and (min-width: 768px){
+    .equipo2 section, .equipo2  {
+      flex-direction: row-reverse;
+    }
+  }
+
+
+/* Marcador deportivo */

@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+}
+
+#navbar {
+    background-color: #FF8310!important;
+    border: 0;
+}
+
+.img-navbar {
+    width: 15%;
+}
+
+main {
+    background-color: #a4a4a4;
+    background-image: url(../assets/img/bg-empty.png);
+    background-size: 95%;
+    padding: 0;
+}
+
+.container-error {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+texto-error {
+    margin-top: 50px;
+}
+
+.vidas {
+    position: absolute;
+    margin-bottom: 50px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.vida {
+    position: absolute;
+    width: 40%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.vida-base {
+    width: 40%;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+}
+
+.btn-error {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+
+
+/* ANIMACION DE BUBBLE */
+
+.bubble {
+    position: absolute;
+    margin: auto;
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-right: 10%;
+    width: 15%;
+}
+
+.bubble {
+    opacity: 0;
+    animation: aparecer 1s linear 2.5s forwards;
+}
+
+@keyframes aparecer {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ANIMACION PARA VIDAS */
+
+.vidas .vida {
+    opacity: 0;
+    animation-name: mostrar-vida;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.vidas .vida:nth-child(7) {
+    animation-delay: 0s;
+}
+
+.vidas .vida:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.vidas .vida:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.vidas .vida:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.vidas .vida:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.vidas .vida:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+@keyframes mostrar-vida {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ANIMACION LOGO */
+
+.logo-solo {
+    width: 10%;
+    position: absolute;
+    margin-right: 10%;
+    transform: translate(0, 42%);
+    /* Empieza fuera de la pantalla */
+    animation: caida 3s ease-in-out;
+}
+
+@keyframes caida {
+    0% {
+        transform: translate(0, -250%);
+        /* Inicia fuera de la pantalla */
+        opacity: 1;
+        /* Inicia invisible */
+    }
+    60% {
+        transform: translate(0, 50%);
+        /* Llega a la mitad de la pantalla */
+        opacity: 1;
+        /* Se hace visible */
+    }
+    75% {
+        transform: translate(0, 40%);
+        /* Rebote en la mitad */
+    }
+    85% {
+        transform: translate(0, 45%);
+        /* Rebote más alto */
+    }
+    95% {
+        transform: translate(0, 42%);
+        /* Rebote más bajo */
+    }
+    100% {
+        transform: translate(0, 42%);
+        /* Rebote final */
+    }
+}
